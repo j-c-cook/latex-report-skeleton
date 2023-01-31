@@ -1,0 +1,49 @@
+\documentclass{article}
+
+% move the title up
+\usepackage{titling}
+\setlength{\droptitle}{-4em}
+
+\usepackage{wrapfig}
+
+% reduce the margins
+\usepackage[margin=1in]{geometry}
+
+\usepackage{lipsum}
+
+% for url
+\usepackage[hidelinks]{hyperref}
+
+% change color of links
+\hypersetup{colorlinks = true,
+   citecolor=blue,
+   linkcolor=blue,   
+   urlcolor=blue,
+   % link table of contents
+   linktoc=all}
+
+\usepackage{mathrsfs}
+\usepackage{amsfonts}
+\DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+% for graphics and captions of graphics
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+
+% suppress page number
+\pagenumbering{gobble} 
+
+% create a title for the page
+\title{Title}
+\date{Weekday, Month DD, YYYY}
+\author{First Last}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\lipsum[2-4]
+
+\end{document}
